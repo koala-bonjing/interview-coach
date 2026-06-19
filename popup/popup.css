@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap");
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  width: 280px;
+  background: #0b0e11;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  color: #e7f3f0;
+}
+
+.ic-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ic-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ic-brand h1 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.ic-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #5eead4;
+  box-shadow: 0 0 10px rgba(94, 234, 212, 0.6);
+}
+
+.ic-primary {
+  background: #5eead4;
+  color: #06201c;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.ic-primary:hover { background: #7ff3e2; }
+
+.ic-secondary {
+  background: none;
+  border: 1px solid #1d2a28;
+  color: #8fa3a0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.ic-secondary:hover { border-color: #2a3a37; color: #cfe3e0; }
+
+.ic-section {
+  background: #11161a;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.ic-section h2 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5eead4;
+  margin: 0 0 6px;
+}
+.ic-section p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9fb3b0;
+  margin: 0;
+}
+.ic-warn { color: #fbbf24 !important; }

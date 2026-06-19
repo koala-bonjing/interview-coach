@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interview Coach</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="ic-card">
+    <div class="ic-brand">
+      <span class="ic-dot"></span>
+      <h1>Interview Coach</h1>
+    </div>
+
+    <button id="open-practice" class="ic-primary">Open Practice Studio</button>
+
+    <div class="ic-section">
+      <h2>Live mode</h2>
+      <p>Open Google Meet, Zoom, or Teams in a tab — a "Coach" bubble appears in the corner automatically during the call.</p>
+    </div>
+
+    <div class="ic-section" id="key-warning" hidden>
+      <p class="ic-warn">No API key set yet — feedback won't work until you add one.</p>
+    </div>
+
+    <button id="open-options" class="ic-secondary">Settings</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

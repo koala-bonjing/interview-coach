@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Interview Coach — Practice Studio</title>
+<link rel="stylesheet" href="practice.css" />
+</head>
+<body>
+  <header class="ic-topbar">
+    <div class="ic-brand"><span class="ic-dot"></span> Interview Coach <span class="ic-sub">/ practice studio</span></div>
+    <button id="open-options" class="ic-link">Settings</button>
+  </header>
+
+  <main class="ic-main">
+    <section class="ic-panel">
+      <div class="ic-panel-head">
+        <h2>Question</h2>
+        <select id="category"></select>
+      </div>
+      <p id="question-text">Pick a category and hit "New question."</p>
+      <button id="new-question" class="ic-primary">New question</button>
+    </section>
+
+    <section class="ic-panel">
+      <div class="ic-panel-head">
+        <h2>Your answer</h2>
+        <span id="timer">00:00</span>
+      </div>
+      <div id="transcript" class="ic-transcript" placeholder="Your transcribed answer will appear here as you speak.">Your transcribed answer will appear here as you speak.</div>
+      <div class="ic-row">
+        <button id="record-toggle" class="ic-primary">Start recording</button>
+        <button id="get-feedback" class="ic-secondary" disabled>Get feedback</button>
+      </div>
+      <p id="api-warning" class="ic-warn" hidden>Add your Anthropic API key in Settings to get AI feedback.</p>
+    </section>
+
+    <section class="ic-panel" id="feedback-panel" hidden>
+      <h2>Feedback</h2>
+      <div id="feedback-body"></div>
+    </section>
+
+    <section class="ic-panel">
+      <div class="ic-panel-head">
+        <h2>History</h2>
+        <button id="clear-history" class="ic-link">clear</button>
+      </div>
+      <div id="history-list" class="ic-history"></div>
+    </section>
+  </main>
+
+  <script src="../lib/analysis.js"></script>
+  <script src="../lib/questions.js"></script>
+  <script src="practice.js"></script>
+</body>
+</html>
